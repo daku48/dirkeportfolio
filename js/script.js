@@ -1,18 +1,15 @@
-/* ==========================================================
-   Personal Portfolio - script.js (vanilla JavaScript)
-   ========================================================== */
 
 (function () {
   'use strict';
 
   var root = document.documentElement;
 
-  /* ---------- 1. Theme toggle ---------- */
+
   var themeToggle = document.getElementById('theme-toggle');
 
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
-    // The label names the action the button performs.
+   
     themeToggle.setAttribute('aria-label',
       theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
   }
@@ -32,7 +29,7 @@
     try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
   });
 
-  /* ---------- 2. Mobile menu ---------- */
+
   var menuToggle = document.getElementById('menu-toggle');
   var navMenu = document.getElementById('nav-menu');
 
@@ -46,12 +43,12 @@
     setMenu(!navMenu.classList.contains('open'));
   });
 
-  // Close the menu after choosing a link
+
   navMenu.addEventListener('click', function (e) {
     if (e.target.closest('a')) setMenu(false);
   });
 
-  // Close with Escape
+
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && navMenu.classList.contains('open')) {
       setMenu(false);
@@ -59,12 +56,12 @@
     }
   });
 
-  // Reset when returning to desktop width
+
   window.matchMedia('(min-width: 821px)').addEventListener('change', function (e) {
     if (e.matches) setMenu(false);
   });
 
-  /* ---------- 3. Highlight the current section in the nav ---------- */
+  
   var navLinks = document.querySelectorAll('.nav-links a');
   var sections = document.querySelectorAll('main section[id]');
 
@@ -82,11 +79,11 @@
     sections.forEach(function (section) { observer.observe(section); });
   }
 
-  /* ---------- 4. Footer year ---------- */
+
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---------- 5. Back-to-top button ---------- */
+
   var backToTop = document.getElementById('back-to-top');
 
   function updateBackToTop() {
