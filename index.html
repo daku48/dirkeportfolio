@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirke Romaine D. Angeles | Portfolio</title>
+  <meta name="description" content="Portfolio of Dirke Romaine D. Angeles, a second-year BSIT student at Holy Cross of Davao College focused on front-end web development and UI/UX design.">
+  <meta name="color-scheme" content="dark light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply the saved/system theme before first paint (prevents a flash). */
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = (saved === 'dark' || saved === 'light') ? saved
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">Dirke Angeles</a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Dirke Romaine D. Angeles</h1>
+          <p class="hero-title">BSIT Student | Front-End Developer | UI/UX Designer | Aspiring Back-End Developer</p>
+          <p class="hero-intro">I'm a second-year Information Technology student at Holy Cross of Davao College. I build responsive websites with HTML, CSS, and JavaScript, and I plan interfaces in Figma and Miro before coding them. I'm still growing, and I'm working toward stronger back-end skills.</p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+            <a href="#resume" class="btn btn-secondary">View Resume</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Quick facts">
+          <div class="monogram" aria-hidden="true">DA</div>
+          <ul class="facts">
+            <li><span class="facts-label">Program</span><span>BSIT, Second Year</span></li>
+            <li><span class="facts-label">School</span><span>Holy Cross of Davao College</span></li>
+            <li><span class="facts-label">Focus</span><span>Front-End Web Development</span></li>
+            <li><span class="facts-label">Certified</span><span>Computer Systems Servicing NC II</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>About Me</h2>
+        </header>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Education</h3>
+            <p>I'm taking a Bachelor of Science in Information Technology (BSIT) at Holy Cross of Davao College and am now in my second year. My coursework includes web development, human-computer interaction, programming, and UI/UX design. Before college, I finished Senior High School in Computer Systems Servicing (CSS) at F. Bustamante National High School (2023 to 2025).</p>
+          </article>
+          <article class="card">
+            <h3>Focus Areas</h3>
+            <p>My main focus is front-end web development: turning a design into clean, responsive pages. I'm also developing entry-level skills in UI/UX design, where I sketch wireframes and prototypes, and in back-end development, which I'm still learning.</p>
+          </article>
+          <article class="card">
+            <h3>Learning &amp; Problem Solving</h3>
+            <p>I learn through coursework and by building. For my projects I plan the layout first, then code it and refine the details. I like to keep layouts clean, branding consistent, and navigation simple to follow.</p>
+          </article>
+          <article class="card">
+            <h3>Where I'm Headed</h3>
+            <p>I want to keep improving my front-end and design skills, deepen my JavaScript, and add back-end knowledge so I can build complete web applications. I'm open to learning on real projects in a professional team.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2>What I Work With</h2>
+          <p class="section-sub">Taken from my resume, projects, and certificate. I'm a student, so levels are stated plainly.</p>
+        </header>
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Front-End Development</h3>
+            <ul class="tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript (basic to intermediate)</li><li>Responsive web design</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>UI/UX Design</h3>
+            <ul class="tags">
+              <li>UI/UX design (entry level)</li><li>Wireframing</li><li>Prototyping</li><li>Figma</li><li>Miro</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Back-End Development</h3>
+            <ul class="tags">
+              <li>Entry level, currently learning</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>Visual Studio Code</li><li>Git &amp; GitHub (basic)</li><li>Microsoft Word, Excel, PowerPoint</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Computer Systems</h3>
+            <ul class="tags">
+              <li>Computer Systems Servicing NC II</li><li>Install &amp; configure computer systems</li><li>Set up computer networks &amp; servers</li><li>Maintain &amp; repair systems</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured Projects</h2>
+          <p class="section-sub">Three front-end website designs. Each one has a different look and theme.</p>
+        </header>
+
+        <div class="projects-list">
+
+          <!-- Project 1 -->
+          <article class="project">
+            <a class="project-shot" href="assets/projects/ds-sweet-heritage.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the full D's Sweet Heritage screenshot in a new tab">
+              <img src="assets/projects/ds-sweet-heritage.jpg" alt="Home page of D's Sweet Heritage: a banana-leaf tray of purple puto bumbong, kuchinta and biko, with three product cards below." width="1400" height="793" loading="lazy">
+            </a>
+            <div class="project-body">
+              <p class="project-num">Project 01</p>
+              <h3>D's Sweet Heritage</h3>
+              <p>A multi-page website for a traditional Filipino sweets (kakanin) business. The home page opens with a full-width photo hero, a woven-pattern section heading, and product cards for Puto Bumbong, Kuchinta, and Biko Special, each with a Details button.</p>
+              <p class="meta"><strong>My role:</strong> I designed the UI/UX and developed the responsive site. I made wireframes and a prototype in Miro and Figma first, then built it in code.</p>
+              <ul class="tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li><li>Miro</li>
+              </ul>
+              <ul class="features">
+                <li>Navigation with Home, Our Kakanin, About Us, and a Check Out button</li>
+                <li>Consistent branding: banana-leaf green, gold, and woven textures</li>
+                <li>Product cards with Details buttons</li>
+              </ul>
+              <div class="btn-group">
+                <a href="assets/projects/ds-sweet-heritage.jpg" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">View Full Screenshot</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reverse">
+            <a class="project-shot" href="assets/projects/dive.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the full Dive screenshot in a new tab">
+              <img src="assets/projects/dive.jpg" alt="Dive landing page: light-blue glass-style interface with a rounded navigation bar, a search field, the headline 'Together we keep the blue alive' and a Dive Deeper button." width="1223" height="801" loading="lazy">
+            </a>
+            <div class="project-body">
+              <p class="project-num">Project 02</p>
+              <h3>Dive</h3>
+              <p>A landing page with an ocean-blue, glass-style look. It has a rounded navigation bar (Home, Sign in, Info, Contact), a search field, the headline "Together we keep the blue alive," and a "Dive Deeper" call to action.</p>
+              <p class="meta"><strong>Focus:</strong> Front-end interface design: layout, rounded components, and a cohesive blue palette.</p>
+              <ul class="features">
+                <li>Rounded, icon-labelled navigation buttons</li>
+                <li>Search field and a clear call-to-action button</li>
+                <li>Soft translucent panels on a single-color theme</li>
+              </ul>
+              <div class="btn-group">
+                <a href="assets/projects/dive.jpg" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">View Full Screenshot</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <a class="project-shot" href="assets/projects/regal-time-pieces.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the full Regal Time Pieces screenshot in a new tab">
+              <img src="assets/projects/regal-time-pieces.jpg" alt="Regal Time Pieces landing page: a dark, moody photo of a vintage wristwatch with script lettering, a short description, and an Explore Collection button." width="1400" height="787" loading="lazy">
+            </a>
+            <div class="project-body">
+              <p class="project-num">Project 03</p>
+              <h3>Regal Time Pieces</h3>
+              <p>A landing page for a vintage watch collection. A dark hero photo sits behind elegant script lettering and a short introduction, with an "Explore Collection" button. The navigation uses round seal-style buttons for Home, Our Watches, and Discover Our Story.</p>
+              <p class="meta"><strong>Focus:</strong> Front-end interface design with a strong visual theme: a dark, classic mood and a script and condensed type pairing.</p>
+              <ul class="features">
+                <li>Full-screen image hero with centered text</li>
+                <li>Custom seal-style navigation buttons</li>
+                <li>Clear call to action: Explore Collection</li>
+              </ul>
+              <div class="btn-group">
+                <a href="assets/projects/regal-time-pieces.jpg" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">View Full Screenshot</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Resume</p>
+          <h2>My Resume</h2>
+          <p class="section-sub">A one-page summary of my education, project experience, and technical skills.</p>
+        </header>
+        <div class="resume-layout">
+          <div class="card resume-actions">
+            <h3>Get my resume</h3>
+            <p>View it in a new tab.</p>
+            <div class="btn-group">
+              <a href="assets/resume/resume.png" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Resume</a>
+            </div>
+          </div>
+          <a class="resume-preview card" href="assets/resume/resume.png" target="_blank" rel="noopener noreferrer" aria-label="Open my resume in a new tab">
+            <img src="assets/resume/resume.png" alt="My one-page resume: summary, academic project experience, education at Holy Cross of Davao College, and technical skills." width="615" height="792" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Certifications</p>
+          <h2>NC II Certification</h2>
+        </header>
+        <article class="card cert-card">
+          <a class="cert-preview" href="assets/certificates/nc2-certificate.png" target="_blank" rel="noopener noreferrer" aria-label="Open my NC II certificate in a new tab">
+            <img src="assets/certificates/nc2-certificate.png" alt="National Certificate II in Computer Systems Servicing awarded to Dirke Romaine D. Angeles by TESDA." width="596" height="841" loading="lazy">
+          </a>
+          <div class="cert-info">
+            <h3>National Certificate II: Computer Systems Servicing</h3>
+            <dl class="cert-details">
+              <div><dt>Issuing organization</dt><dd>Technical Education and Skills Development Authority (TESDA)</dd></div>
+              <div><dt>Issued</dt><dd>February 19, 2025</dd></div>
+              <div><dt>Valid until</dt><dd>February 18, 2030</dd></div>
+              <div><dt>Core competencies</dt><dd>Install and configure computer systems; set up computer networks; set up computer servers; maintain and repair computer systems and networks</dd></div>
+            </dl>
+            <div class="btn-group">
+              <a href="assets/certificates/nc2-certificate.png" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Get In Touch</h2>
+          <p class="section-sub">I'm happy to hear about learning opportunities, collaborations, and feedback on my work.</p>
+        </header>
+        <ul class="contact-list">
+          <li><a class="card contact-link" href="mailto:dirkeangeles05@gmail.com"><span class="label">Email</span><span class="value">dirkeangeles05@gmail.com</span></a></li>
+          <li><div class="card contact-link"><span class="label">Location</span><span class="value">Tibungco, Davao City, Philippines</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand">Dirke Romaine D. Angeles</p>
+        <p class="copyright">&copy; <span id="year">2026</span> Dirke Romaine D. Angeles. All rights reserved.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" hidden>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
